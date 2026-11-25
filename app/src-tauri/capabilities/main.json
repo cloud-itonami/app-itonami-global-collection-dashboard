@@ -1,0 +1,1 @@
+{"identifier":"global-collection-dashboard-local","description":"Read-only dashboard. No external network, filesystem, installer or shell permissions.","windows":["main"],"permissions":[]}

@@ -1,0 +1,14 @@
+{
+  "name": "app-itonami-global-collection-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "収集状況 Tauri dapp (Ontology Collector / AWAI-3618) dashboard",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "3.0.0-alpha.6"
+  }
+}

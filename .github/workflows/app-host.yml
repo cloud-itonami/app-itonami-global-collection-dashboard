@@ -1,0 +1,12 @@
+name: app-host
+on:
+  pull_request:
+    paths: ["app/src-tauri/**", "app/package.json", ".github/workflows/app-host.yml"]
+  workflow_dispatch: {}
+jobs:
+  host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo check --manifest-path app/src-tauri/Cargo.toml
