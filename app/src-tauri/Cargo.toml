@@ -1,0 +1,17 @@
+[package]
+name = "global-collection-dashboard"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.95"
+[lib]
+name = "global_collection_dashboard_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+[build-dependencies]
+tauri-build = { version = "=3.0.0-alpha.4", features = [] }
+[dependencies]
+tauri = { version = "=3.0.0-alpha.6", features = [] }
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+[profile.dev]
+debug = 0
+strip = "symbols"

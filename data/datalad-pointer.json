@@ -1,0 +1,31 @@
+{
+  "schema": "datalad-pointer.v1",
+  "repository": "cloud-itonami/app-itonami-global-collection-dashboard",
+  "note": "雛形: データ本体は yataverse.com の awai fs に保存し、GitHub にはこの pointer のみ置く。CID は未確定 (TBD)。",
+  "storage": {
+    "endpoint": "https://yataverse.com",
+    "filesystem": "awai fs",
+    "cid": "TBD",
+    "path": "TBD"
+  },
+  "pointers": [
+    {
+      "name": "receipts/2026-11-23.edn",
+      "cid": "TBD",
+      "awaiPath": "TBD",
+      "sha256": "TBD",
+      "bytes": null,
+      "sourceIssue": "AWAI-3824",
+      "note": "AWAI-3824 receipts 最新。28 checked、27x2xx 1x4xx 0x5xx、bot-blocked 1。"
+    },
+    {
+      "name": "dashboard-snapshot",
+      "cid": "TBD",
+      "awaiPath": "TBD",
+      "sha256": "TBD",
+      "bytes": null,
+      "sourceIssue": "AWAI-3618",
+      "note": "ダッシュボード初期表示の生成元スナップショット。app/src/data.js が表示用コピー。"
+    }
+  ]
+}
